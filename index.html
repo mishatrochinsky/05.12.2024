@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+  position: relative;
+  width: 200px;
+}
+
+.first {
+    height: 150px;
+    width: 150px;
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  float: left;
+}
+
+.second {
+    height: 100px;
+    width: 100px;
+  background-color: lightcoral;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  visibility: hidden; 
+  float: left;
+}
+
+.first:hover + .second {
+  visibility: visible; 
+}
+.first:hover{
+    visibility: hidden;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">Pierwszy div</div>
+        <div class="second">Drugi div</div>
+      </div>
+</body>
+</html>
