@@ -5,48 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    body,html{
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+        body{
+            background-image: url('oudap.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .header{
+            height: 200px;
+            width: auto;
+
+            color: rgb(255, 255, 255);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 10px;
+            
+        }
+       
+        .grid-container{
+            display: grid;
+            grid-template-columns:repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 10px;
+            margin: 10px;
+        
+        }
         .container {
-  position: relative;
-  width: 200px;
-}
+            position: relative;
+            width: 150px;
+            height: 150px; /* Wysokość kontenera */
+           margin: 20px;
+           
+        }
+        .first2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(250, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border: 3px solid rgb(8, 160, 8);
+            position: absolute; 
+            top: 0;
+            left: 0;
+            font-size: 35px;
+            
+        }
 
-.first {
-    height: 150px;
-    width: 150px;
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #000;
-  float: left;
-}
+        .first1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            width: 150px;
+            background-color: rgb(6, 161, 6);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border: 3px solid #ff0000;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            font-size: 35px;
+            
+            
+        }
 
-.second {
-    height: 100px;
-    width: 100px;
-  background-color: lightcoral;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #000;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  visibility: hidden; 
-  float: left;
-}
+        .second {
+            height: 150px;
+            width: 150px;
+            background-color: rgb(252, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+      border: 1px solid white;
+            position: absolute; 
+            top: 0;
+            left: 0;
+            visibility: hidden;
+        }
 
-.first:hover + .second {
-  visibility: visible; 
-}
-.first:hover{
-    visibility: hidden;
-}
+        .first1:hover {
+            background: none;
+            font-size: 0; 
+            border: 0;
+        }
+
+        .first1:hover + .second {
+            visibility: visible; 
+        } 
+        .first2:hover {
+            background: none;
+            font-size: 0; 
+            border: 0;
+        }
+
+        .first2:hover + .second {
+            visibility: visible; 
+        }
+        .fotka{
+            height: 105px;
+            width: 105px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        
+        <div class="header">
+            <h1>ADVENTOWY KALENDARZ</h1>
+            <h5>Christmas is the only time of year in which one can sit in front of a dead tree and eat candy out of socks. Enjoy!</h5>
+            <div class="logo"></div>
+            <div class="-_-"></div>
+        </div>
+    </header>
+    
+    <section class="grid-container">
+        <div class="container">
+        <div class="first1">1</div>
+        <div class="second"><img src="boxik.png" class="fotka"></div>
+    </div>
+
     <div class="container">
-        <div class="first">Pierwszy div</div>
-        <div class="second">Drugi div</div>
-      </div>
+        <div class="first2">2</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">3</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">4</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">5</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">6</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">7</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+        </div>
+    <div class="container">
+        <div class="first2">8</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+        </div>
+    <div class="container">
+        <div class="first1">9</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">10</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">11</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">12</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">13</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">14</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">15</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">16</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">17</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">18</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">19</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">20</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">21</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">22</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first1">23</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    <div class="container">
+        <div class="first2">24</div>
+        <div class="second"><img src="krestik.png" class="fotka"></div>
+    </div>
+    </section>
 </body>
 </html>
